@@ -72,17 +72,6 @@ font2 = {'family' : 'Times New Roman',
 'size'   : 14,
 }
 
-font3 = {'family' : 'Times New Roman',
-'weight' : 'normal',
-'size'   : 14,
-}
-
-font4 = {'family' : 'Times New Roman',
-'weight' : 'normal',
-'size'   : 14,
-}
-
-
 #fig = plt.figure()
 figsize = 7,5
 figure, ax = plt.subplots(figsize=figsize)
@@ -107,7 +96,7 @@ plt.plot(history.history['val_loss'],'-b', label='val loss',linewidth=1.5)
 plt.title('model loss',font2)
 plt.ylabel('loss',font2)
 plt.xlabel('epoch',font2)
-plt.legend(loc='upper right',prop=font3)
+plt.legend(loc='upper right',prop=font2)
 
 figsize = 7,5
 figure, ax = plt.subplots(figsize=figsize)
