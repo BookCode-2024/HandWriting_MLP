@@ -37,7 +37,7 @@ from keras.models import Sequential # 导入Sequential模型
 from keras.layers import Dense # 全连接层用Dense类
 from keras.utils import np_utils # 导入np_utils是为了用one hot encoding方法将输出标签的向量（vector）转化为只在出现对应标签的那一列为1，其余为0的布尔矩阵
 
-(X_train,y_train),(X_test,y_test) = mnist.load_data() #加载数据
+#(X_train,y_train),(X_test,y_test) = mnist.load_data() #加载数据
 #print(X_train.shape[0])
 #数据集是3维的向量（instance length,width,height).对于多层感知机，模型的输入是二维的向量，因此这里需要将数据集reshape，即将28*28的向量转成784长度的数组。可以用numpy的reshape函数轻松实现这个过程。
 num_pixels = X_train.shape[1] * X_train.shape[2] 
